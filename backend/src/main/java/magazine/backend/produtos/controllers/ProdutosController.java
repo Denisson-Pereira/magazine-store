@@ -19,12 +19,12 @@ public class ProdutosController {
     private ProdutosService produtosService;
     @Autowired
 
-    @GetMapping("/produtos")
+    @GetMapping("/itens")
     public List<ProdutosDTO> getAllProdutos() {
         return produtosService.getAll("produtos");
     }
 
-    @GetMapping("/produtos/{id}")
+    @GetMapping("/itens/{id}")
     public ProdutosDTO getByIdProdutos(@PathVariable int id) {
         return produtosService.getById("produtos", id);
     }
