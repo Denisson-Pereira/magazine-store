@@ -1,10 +1,10 @@
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import StackRoutes from './stack.routes';
-import { Feather, SimpleLineIcons, FontAwesome, FontAwesome5 } from '@expo/vector-icons'
+import { Feather, SimpleLineIcons, FontAwesome, FontAwesome5 } from '@expo/vector-icons';
 import { Categorias } from '../screens/Categorias';
 import { Favoritos } from '../screens/Favoritos';
 import { Conta } from '../screens/Conta';
-import CarrinhoRoutes from './carrinho.routes';
+import { Carrinho } from '../screens/Carrinho';
 
 const Tab = createBottomTabNavigator();
 
@@ -12,7 +12,11 @@ export const TabRoutes = () => {
     return (
         <Tab.Navigator
             screenOptions={{
-                headerShown: false,
+                headerShown: true,
+                headerStyle: {
+                    backgroundColor: '#00A6EB', 
+                },
+                headerTintColor: '#fff', 
                 tabBarStyle: {
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -22,7 +26,7 @@ export const TabRoutes = () => {
             }}
         >
             <Tab.Screen
-                name='Início'
+                name='Magazine'
                 component={StackRoutes}
                 options={{
                     tabBarIcon: ({ color, size }) => <Feather name='home' color={color} size={size} />
@@ -47,7 +51,7 @@ export const TabRoutes = () => {
 
             <Tab.Screen
                 name='Carrinho'
-                component={CarrinhoRoutes}
+                component={Carrinho}
                 options={{
                     tabBarIcon: ({ color, size }) => <FontAwesome name='shopping-cart' color={color} size={size} />
                 }}
@@ -61,5 +65,5 @@ export const TabRoutes = () => {
                 }}
             />
         </Tab.Navigator>
-    )
-}
+    );
+};

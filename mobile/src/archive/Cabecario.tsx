@@ -1,7 +1,11 @@
 import { StyleSheet, Text, TextInput, View } from 'react-native';
 import { Feather, FontAwesome } from '@expo/vector-icons';
+import { useCart } from '../context/CartContext';
 
 export const Cabecario = () => {
+
+    const { quantidadeCart } = useCart()
+
     return (
         <View style={styles.cabecario}>
             <View style={styles.pesquisa}>
@@ -15,9 +19,11 @@ export const Cabecario = () => {
             </View>
             <View style={styles.carrinho}>
                 <FontAwesome name='shopping-bag' color={'#ffffff'} size={30} />
+                {parseInt(quantidadeCart) == 0 ? <></> : 
                 <View style={styles.textCarrinho}>
-                    <Text style={{ color: 'white' }}>5</Text>
+                    <Text style={{ color: 'white' }}>{quantidadeCart}</Text>
                 </View>
+                }
             </View>
         </View>
 

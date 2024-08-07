@@ -8,22 +8,27 @@ import { parcerlar } from '../helpers/parcerlar';
 import { descontos } from '../helpers/descontos';
 import { useFavorites } from '../context/FavoritesContext';
 
-export const Produtos = () => {
+export const ProdutosCelulares = () => {
   const [dados, setDados] = useState<IProdutos[]>([]);
   const { navigate } = useNavigate();
   const { favorites, toggleFavorite } = useFavorites();
+
+  const [celulares, setCelulares] = useState<IProdutos[]>([])
+
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await produtosService();
         setDados(response);
+        setCelulares(dados.filter(item => item.categoria == 'celular'))
       } catch (error) {
         console.log('Erro ao consultar dados: ', error);
       }
     };
     fetchData();
-  }, []);
+  }, [celulares]);
+
 
   const renderStars = (rating: string) => {
     const numericRating = Math.min(5, Math.max(0, Math.round(parseFloat(rating))));
@@ -47,7 +52,7 @@ export const Produtos = () => {
         <Text style={styles.textoTituloSecao}>🎉 Os smartphones mais procurados!</Text>
       </View>
       <View style={styles.grid}>
-        {dados.map((item) => {
+        {celulares.map((item) => {
           const isFavorite = favorites.some(fav => fav.id === item.id);
           return (
             <TouchableOpacity

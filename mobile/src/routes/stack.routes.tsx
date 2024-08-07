@@ -1,8 +1,8 @@
 import { createStackNavigator } from "@react-navigation/stack"
 import { Home } from "../screens/Home";
 import { Login } from "../screens/Login";
-import { Carrinho } from "../screens/Carrinho";
 import { ProdutosDetalhes } from "../screens/ProdutosDetalhes";
+import { Carrinho } from "../screens/Carrinho";
 
 const Stack = createStackNavigator();
 
@@ -10,11 +10,15 @@ export default function StackRoutes() {
     return (
         <Stack.Navigator
             screenOptions={{
-                headerTintColor: 'white',
-                headerStyle: { backgroundColor: '#00A6EB' },
-
+                headerTintColor: '#00A6EB',
+                headerStyle: {
+                    backgroundColor: '#ffffff',
+                    elevation: 0,
+                    shadowOpacity: 0, 
+                },
             }}
         >
+
             <Stack.Screen
                 name="home"
                 component={Home}
@@ -25,7 +29,7 @@ export default function StackRoutes() {
                 name="carrinho"
                 component={Carrinho}
                 options={{
-                    headerShown: true,
+                    headerShown: false,
                     headerTitle: 'Carrinho'
                 }}
             />
@@ -34,7 +38,7 @@ export default function StackRoutes() {
                 name="login"
                 component={Login}
                 options={{
-                    headerShown: true,
+                    headerShown: false,
                 }}
             />
 
@@ -43,7 +47,7 @@ export default function StackRoutes() {
                 component={ProdutosDetalhes}
                 options={{
                     headerShown: true,
-                    headerTitle: 'Celulares'
+                    headerTitle: ''
                 }}
             />
 

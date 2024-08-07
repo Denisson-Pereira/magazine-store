@@ -65,7 +65,6 @@ export const ProdutosDetalhes = () => {
     <View style={styles.container}>
       {produto ? (
         <>
-          <Localizacao />
           <ScrollView style={styles.containerScroll} showsVerticalScrollIndicator={false}>
             <ScrollView
               horizontal

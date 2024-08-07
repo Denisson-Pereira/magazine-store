@@ -2,19 +2,22 @@ import { ScrollView, StyleSheet, View } from 'react-native';
 import { Localizacao } from '../components/Localizacao';
 import SlideShow from '../components/SlideShow';
 import { Marcas } from '../components/Marcas';
-import { Cabecario } from '../components/Cabecario';
-import { Produtos } from '../components/Produtos';
+import { Cabecario } from '../archive/Cabecario';
+import { ProdutosCelulares } from '../components/ProdutosCelulares';
+import { ProdutosNotebooks } from '../components/ProdutosNotebooks';
+import { ProdutosTablets } from '../components/ProdutosTablets';
 
 export const Home = () => {
 
     return (
         <View style={styles.container}>
-            <Cabecario />
             <Localizacao />
             <ScrollView showsVerticalScrollIndicator={false}>
                 <SlideShow />
                 <Marcas />
-                <Produtos />
+                <ProdutosCelulares />
+                <ProdutosNotebooks />
+                <ProdutosTablets />
             </ScrollView>
         </View>
     );

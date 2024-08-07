@@ -17,4 +17,5 @@ export interface IProdutos {
     loja1: string
     loja2: string
     loja3: string
+    categoria: string
 }

@@ -13,6 +13,7 @@ interface CartContextProps {
     removeCart: (cartId: string) => void;
     incrementQuantity: (cartId: string) => void;
     decrementQuantity: (cartId: string) => void;
+    quantidadeCart: string;
 }
 
 interface CartProviderProps {
@@ -23,16 +24,25 @@ const CartContext = createContext<CartContextProps | undefined>(undefined);
 
 export const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
     const [cart, setCart] = useState<CartItem[]>([]);
+    const [quantidadeCart, setQuantidadeCart] = useState<string>('')
 
     useEffect(() => {
         const loadCart = async () => {
             const storedCart = await AsyncStorage.getItem('@Cart');
             if (storedCart) {
-                setCart(JSON.parse(storedCart));
+                const parsedCart = JSON.parse(storedCart);
+                setCart(parsedCart);
+                setQuantidadeCart(parsedCart.length.toString());
             }
         }
         loadCart();
     }, []);
+
+    const updateCartAndQuantity = async (updatedCart: CartItem[]) => {
+        setCart(updatedCart);
+        setQuantidadeCart(updatedCart.length.toString());
+        await AsyncStorage.setItem('@Cart', JSON.stringify(updatedCart));
+    };
 
     const addCart = async (item: IProdutos) => {
         const existingItem = cart.find(cartItem => cartItem.id === item.id);
@@ -40,40 +50,35 @@ export const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
             const updatedCart = cart.map(cartItem => 
                 cartItem.id === item.id ? { ...cartItem, quantity: cartItem.quantity + 1 } : cartItem
             );
-            setCart(updatedCart);
-            await AsyncStorage.setItem('@Cart', JSON.stringify(updatedCart));
+            updateCartAndQuantity(updatedCart);
         } else {
             const newItem: CartItem = { ...item, cartId: Date.now().toString(), quantity: 1 };
             const updatedCart = [...cart, newItem];
-            setCart(updatedCart);
-            await AsyncStorage.setItem('@Cart', JSON.stringify(updatedCart));
+            updateCartAndQuantity(updatedCart);
         }
     };
 
     const removeCart = async (cartId: string) => {
         const updatedCart = cart.filter(item => item.cartId !== cartId);
-        setCart(updatedCart);
-        await AsyncStorage.setItem('@Cart', JSON.stringify(updatedCart));
+        updateCartAndQuantity(updatedCart);
     };
 
     const incrementQuantity = async (cartId: string) => {
         const updatedCart = cart.map(cartItem => 
             cartItem.cartId === cartId ? { ...cartItem, quantity: cartItem.quantity + 1 } : cartItem
         );
-        setCart(updatedCart);
-        await AsyncStorage.setItem('@Cart', JSON.stringify(updatedCart));
+        updateCartAndQuantity(updatedCart);
     };
 
     const decrementQuantity = async (cartId: string) => {
         const updatedCart = cart.map(cartItem => 
             cartItem.cartId === cartId && cartItem.quantity > 1 ? { ...cartItem, quantity: cartItem.quantity - 1 } : cartItem
         );
-        setCart(updatedCart);
-        await AsyncStorage.setItem('@Cart', JSON.stringify(updatedCart));
+        updateCartAndQuantity(updatedCart);
     };
 
     return (
-        <CartContext.Provider value={{ cart, addCart, removeCart, incrementQuantity, decrementQuantity }}>
+        <CartContext.Provider value={{ cart, addCart, quantidadeCart, removeCart, incrementQuantity, decrementQuantity }}>
             {children}
         </CartContext.Provider>
     );
