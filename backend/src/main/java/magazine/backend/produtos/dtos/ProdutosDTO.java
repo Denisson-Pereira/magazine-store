@@ -18,5 +18,6 @@ public record ProdutosDTO(
     String imagem3, 
     String loja1, 
     String loja2, 
-    String loja3
+    String loja3,
+    String categoria
 ){}

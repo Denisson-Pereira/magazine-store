@@ -52,7 +52,8 @@ public class ProdutosService implements GenericoService<ProdutosDTO> {
                     rs.getString("imagem3"),
                     rs.getString("loja1"),
                     rs.getString("loja2"),
-                    rs.getString("loja3"));
+                    rs.getString("loja3"),
+                    rs.getString("categoria"));
         }
     }
 }
