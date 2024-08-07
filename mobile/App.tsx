@@ -1,20 +1,16 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { CartProvider } from './src/context/CartContext';
+import { FavoritesProvider } from './src/context/FavoritesContext';
+import { MagazineProvider } from './src/context/MagazineContext';
+import Routes from './src/routes/index.routes';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <CartProvider>
+      <FavoritesProvider>
+        <MagazineProvider>
+          <Routes />
+        </MagazineProvider>
+      </FavoritesProvider>
+    </CartProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
