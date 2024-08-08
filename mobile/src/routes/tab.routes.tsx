@@ -25,6 +25,7 @@ export const TabRoutes = () => {
                     alignItems: 'center',
                     justifyContent: 'center',
                     height: 90,
+                    backgroundColor: '#ffffff',
                 },
                 tabBarActiveTintColor: '#00A6EB',
             }}
@@ -87,7 +88,7 @@ const styles = StyleSheet.create({
         position: 'absolute',
         right: -6,
         top: -3,
-        backgroundColor: 'red',
+        backgroundColor: '#1dc525',
         borderRadius: 8,
         width: 16,
         height: 16,
