@@ -31,7 +31,7 @@ export const Favoritos = () => {
             <TouchableOpacity 
                 key={item.id}
                 style={styles.item}
-                onPress={() => navigate('ProdutosDetalhesCelulares', { id: item.id })}
+                onPress={() => navigate('ProdutosDetalhes', { id: item.id })}
             >
                 <Image
                     source={{ uri: item.imagem1 }}
