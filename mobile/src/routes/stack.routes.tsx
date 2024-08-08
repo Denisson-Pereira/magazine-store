@@ -3,6 +3,9 @@ import { Home } from "../screens/Home";
 import { Login } from "../screens/Login";
 import { ProdutosDetalhes } from "../screens/ProdutosDetalhes";
 import { Carrinho } from "../screens/Carrinho";
+import { Celulares } from "../screens/Celulares";
+import { Notebooks } from "../screens/Notebooks";
+import { Tablets } from "../screens/Tablets";
 
 const Stack = createStackNavigator();
 
@@ -14,7 +17,7 @@ export default function StackRoutes() {
                 headerStyle: {
                     backgroundColor: '#ffffff',
                     elevation: 0,
-                    shadowOpacity: 0, 
+                    shadowOpacity: 0,
                 },
             }}
         >
@@ -50,6 +53,34 @@ export default function StackRoutes() {
                     headerTitle: ''
                 }}
             />
+
+            <Stack.Screen
+                name="Celulares"
+                component={Celulares}
+                options={{
+                    headerShown: true,
+                    headerTitle: ''
+                }}
+            />
+
+            <Stack.Screen
+                name="Notebooks"
+                component={Notebooks}
+                options={{
+                    headerShown: true,
+                    headerTitle: ''
+                }}
+            />
+
+            <Stack.Screen
+                name="Tablets"
+                component={Tablets}
+                options={{
+                    headerShown: true,
+                    headerTitle: ''
+                }}
+            />
+
 
         </Stack.Navigator>
     )

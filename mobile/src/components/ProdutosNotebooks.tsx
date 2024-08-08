@@ -49,7 +49,7 @@ export const ProdutosNotebooks = () => {
   return (
     <View style={styles.container}>
       <View style={styles.tituloCelulares}>
-        <Text style={styles.textoTituloSecao}>🎉 Os smartphones mais procurados!</Text>
+        <Text style={styles.textoTituloSecao}>💻 Explore os notebooks e tablets mais inovadores do momento!</Text>
       </View>
       <View style={styles.grid}>
         {notebook.map((item) => {

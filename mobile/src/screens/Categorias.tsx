@@ -7,34 +7,26 @@ import { useNavigate } from '../hooks/useNavigate';
 import { MaterialIcons, FontAwesome5, Ionicons, AntDesign, Entypo, Fontisto } from '@expo/vector-icons';
 
 export const Categorias = () => {
-    const { setUsuario } = useGlobalMagazineContext();
-    const { navigate } = useNavigate();
-
-    const handleSair = async () => {
-        await logoutService();
-        setUsuario({} as IUser);
-        navigate("login");
-    };
-
+    const { navigate } = useNavigate()
     return (
         <ScrollView style={styles.container}>
-            <TouchableOpacity style={styles.categoryButton} onPress={handleSair}>
+            <TouchableOpacity style={styles.categoryButton} onPress={() => navigate('Celulares')}>
                 <MaterialIcons name='smartphone' size={24} color="#4CAF50" />
                 <Text style={styles.categoryText}>Celulares e Smartphones</Text>
             </TouchableOpacity>
             <View style={styles.separatorContainer}>
                 <View style={styles.separator} />
             </View>
-            <TouchableOpacity style={styles.categoryButton}>
+            <TouchableOpacity style={styles.categoryButton} onPress={() => navigate('Notebooks')}>
                 <FontAwesome5 name='laptop' size={24} color="#2196F3" />
                 <Text style={styles.categoryText}>Laptops e Computadores</Text>
             </TouchableOpacity>
             <View style={styles.separatorContainer}>
                 <View style={styles.separator} />
             </View>
-            <TouchableOpacity style={styles.categoryButton}>
-                <Ionicons name='shirt-outline' size={24} color="#FFC107" />
-                <Text style={styles.categoryText}>Roupas e Acessórios</Text>
+            <TouchableOpacity style={styles.categoryButton} onPress={() => navigate('Tablets')}>
+                <MaterialIcons name='tablet-mac' size={24} color="#FFC107" />
+                <Text style={styles.categoryText}>Tablets e e-Readers</Text>
             </TouchableOpacity>
             <View style={styles.separatorContainer}>
                 <View style={styles.separator} />

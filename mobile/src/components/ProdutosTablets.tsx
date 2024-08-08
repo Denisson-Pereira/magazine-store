@@ -49,7 +49,7 @@ export const ProdutosTablets = () => {
   return (
     <View style={styles.container}>
       <View style={styles.tituloCelulares}>
-        <Text style={styles.textoTituloSecao}>🎉 Os smartphones mais procurados!</Text>
+        <Text style={styles.textoTituloSecao}>🎉 Os tablets que estão conquistando o mercado!</Text>
       </View>
       <View style={styles.grid}>
         {tablet.map((item) => {
