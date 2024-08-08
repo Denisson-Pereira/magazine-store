@@ -2,15 +2,15 @@ import React from 'react';
 import { View, FlatList, Image, StyleSheet } from 'react-native';
 
 const images = [
-  { id: '1', uri: 'https://via.placeholder.com/270x170.png?text=Image+1' },
-  { id: '2', uri: 'https://via.placeholder.com/270x170.png?text=Image+2' },
-  { id: '3', uri: 'https://via.placeholder.com/270x170.png?text=Image+3' },
+  { id: '1', uri: require('../assets/slide1.png') },
+  { id: '2', uri: require('../assets/slide2.png') },
+  { id: '3', uri: require('../assets/slide3.png') },
 ];
 
 export const SlideShow: React.FC = () => {
-  const renderItem = ({ item }: { item: { uri: string } }) => (
+  const renderItem = ({ item }: { item: { uri: string | any } }) => (
     <View style={styles.imageContainer}>
-      <Image source={{ uri: item.uri }} style={styles.image} />
+      <Image source={item.uri} style={styles.image} />
     </View>
   );
 
