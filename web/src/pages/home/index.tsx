@@ -1,6 +1,9 @@
+import NavBar from "../../components/NavBar"
 
 export const Home = () => {
   return (
-    <div>homo</div>
+    <div>
+        <NavBar />
+    </div>
   )
 }
