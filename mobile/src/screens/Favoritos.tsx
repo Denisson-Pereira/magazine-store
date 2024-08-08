@@ -59,6 +59,7 @@ export const Favoritos = () => {
                 data={favorites}
                 renderItem={renderItem}
                 keyExtractor={item => item.id.toString()}
+                showsVerticalScrollIndicator={false}
             />
         </View>
     );

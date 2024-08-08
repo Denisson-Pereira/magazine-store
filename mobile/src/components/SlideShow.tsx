@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10, 
   },
   imageContainer: {
-    width: 380,
+    width: 390,
     height: 170,
     justifyContent: 'center',
     alignItems: 'center',
