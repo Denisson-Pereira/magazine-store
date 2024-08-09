@@ -1,0 +1,103 @@
+body
+    background-color: #F9F9F9
+    
+.container
+  background-color: #F9F9F9
+  padding: 20px
+
+.section
+  margin-bottom: 40px
+
+.sectionTitle
+  color: #333
+  font-weight: 700
+  font-size: 24px
+  margin-bottom: 15px
+
+.scrollableRow
+  display: flex
+  flex-wrap: nowrap
+  gap: 20px
+  overflow-x: auto
+  padding-bottom: 10px 
+
+  // Ocultar a barra de rolagem no Chrome, Safari e Edge
+  &::-webkit-scrollbar
+    width: 0px
+    background: transparent
+
+.item
+  background-color: #FFF
+  padding: 15px
+  border-radius: 12px
+  min-width: 300px
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+  cursor: pointer
+  position: relative
+  transition: transform 0.2s ease-in-out
+
+  &:hover
+    transform: translateY(-5px)
+
+.image
+  width: 100%
+  height: 150px
+  object-fit: contain
+
+.text
+  margin-top: 10px
+  font-size: 14px
+  font-weight: 600
+  color: #333
+
+.starsContainer
+  display: flex
+  margin-top: 5px
+
+.textValor
+  font-weight: 800
+  font-size: 18px
+  color: #000
+  margin-top: 5px
+
+.pix
+  font-size: 14px
+  color: #2d2d2d
+
+.textParcelado
+  font-size: 12px
+  color: #555
+
+.desconto
+  display: flex
+  align-items: center
+  margin-top: 5px
+
+.semDesconto
+  font-size: 14px
+  color: #db2c2c
+  text-decoration: line-through
+
+.containerDesconto
+  display: flex
+  align-items: center
+  justify-content: center
+  background-color: #1dc525
+  border-radius: 6px
+  padding: 3px 6px
+  margin-left: 10px
+
+.textEntrega
+  margin-top: 5px
+  background-color: #D6F7D9
+  color: #457A10
+  font-weight: 700
+  font-size: 12px
+  text-align: center
+  border-radius: 4px
+  padding: 5px 0
+
+.coracao
+  position: absolute
+  top: 10px
+  right: 10px

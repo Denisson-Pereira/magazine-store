@@ -8,7 +8,7 @@ import { useGlobalMagazineContext } from '../context/MagazineContext';
 
 import './styles.sass'
 
-function NavScrollExample() {
+function NavBar() {
     const { usuario } = useGlobalMagazineContext()
   return (
     <Navbar expand="lg" className="custom-navbar">
@@ -32,7 +32,7 @@ function NavScrollExample() {
             <Nav.Link href="#" disabled>Link</Nav.Link>
           </Nav>
           <Form className="d-flex align-items-center gap-5">
-            {usuario.id ? (<div>Olá, {usuario.nome}</div>) : (<Button variant="outline-light">Entrar</Button>)}
+            {usuario.id ? (<div>Olá, {usuario.nome}</div>) : (<Button variant="outline-light">Meus Pedidos</Button>)}
           </Form>
         </Navbar.Collapse>
       </Container>
@@ -40,4 +40,4 @@ function NavScrollExample() {
   );
 }
 
-export default NavScrollExample;
+export default NavBar;
