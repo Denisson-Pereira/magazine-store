@@ -116,14 +116,10 @@ Dê uma espiada no nosso projeto em funcionamento e esclareça todas as suas dú
     <img src="./github/img5.png" alt="Mob 1" style="width: 30%;">
 </div>
 
-## 🎥 Tutorial em Vídeo
+## 💻 Software em Ação
 
-<div align="center">
-    <video width="560" height="315" controls>
-        <source src="./github/video.mp4" type="video/mp4">
-        Seu navegador não suporta a tag de vídeo.
-    </video>
-</div>
+![Mob 1](./github/software.gif) 
+
 
 
 ## 📺 Editor de código
