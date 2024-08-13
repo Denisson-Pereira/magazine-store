@@ -226,6 +226,8 @@ Neste projeto, foi utilizado o Visual Studio Code como editor de código.
 
 >Além disso, gostaríamos de ressaltar que este projeto é aberto a contribuições de qualquer pessoa interessada em colaborar. Se você tem ideias, sugestões ou melhorias para oferecer, sinta-se à vontade para participar do desenvolvimento do projeto. Juntos, podemos criar algo incrível e beneficiar a comunidade de forma colaborativa.
 
+>Por fim, este projeto foi inspirado em grandes lojas reais como Magazine Luiza, Americanas e Amazon, buscando replicar as funcionalidades e a experiência de compra dessas plataformas. No entanto, é importante destacar que o projeto é puramente acadêmico e não representa uma identidade real ou está vinculado a qualquer uma dessas empresas.
+
 ## 📜 Licença
 
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/Denisson-Pereira/magazine-store/blob/main/LICENSE) 
