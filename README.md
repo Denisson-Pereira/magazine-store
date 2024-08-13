@@ -108,6 +108,7 @@ Dê uma espiada no nosso projeto em funcionamento e esclareça todas as suas dú
 ## 📱 Responsividade e Mobile
 
 <div style="display: flex; gap: 10px;">
+    <img src="./github/img0.png" alt="Mob 2" style="width: 30%;">
     <img src="./github/img1.png" alt="Mob 2" style="width: 30%;">
     <img src="./github/img2.png" alt="Mob 1" style="width: 30%;">
     <img src="./github/img3.png" alt="Mob 1" style="width: 30%;">
@@ -119,7 +120,7 @@ Dê uma espiada no nosso projeto em funcionamento e esclareça todas as suas dú
 
 <div align="center">
     <video width="560" height="315" controls>
-        <source src="./github/video.MP4" type="video/mp4">
+        <source src="./github/video.mp4" type="video/mp4">
         Seu navegador não suporta a tag de vídeo.
     </video>
 </div>
