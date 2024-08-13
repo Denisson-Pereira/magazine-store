@@ -20,6 +20,24 @@ O projeto **Magazine Store** é uma plataforma completa que integra **backend** 
 
 O **frontend**, construído com **React Native**, proporciona uma interface amigável e intuitiva para os usuários. O aplicativo inclui funcionalidades essenciais, como um carrinho de compras dinâmico, um sistema de favorecimento de produtos, e uma classificação detalhada das categorias de produtos. Além disso, o sistema de cupons de desconto e a opção de aplicar descontos por produto tornam a experiência de compra ainda mais atraente. A criação de contas e a autenticação são gerenciadas com **JWT**, assegurando a segurança e a personalização da experiência do usuário.
 
+## 🏆 Principais Características do Software
+
+| **Característica**                  | **Descrição**                                                                                                 |
+|------------------------------------|---------------------------------------------------------------------------------------------------------------|
+| **Autenticação com JWT**           | Sistema seguro de autenticação utilizando JSON Web Tokens (JWT) para proteger os endpoints da API.           |
+| **Carrinho de Compras Dinâmico**   | Funcionalidade completa para adicionar, remover e modificar produtos no carrinho, com cálculo automático do total e aplicação de cupons de desconto. |
+| **Sistema de Favoritos**           | Permite marcar produtos como favoritos para acesso rápido aos itens de interesse.                           |
+| **Classificação de Categorias**    | Organização de produtos em categorias para uma navegação intuitiva e filtragem eficiente.                   |
+| **Desconto por Produto**           | Aplicação de descontos a produtos individuais, com exibição do preço original e do preço com desconto.       |
+| **Integração com MySQL**           | Banco de dados escalável e seguro criado com MySQL, garantindo integridade dos dados.                        |
+| **Backend com Spring Boot e JDBC** | Desenvolvimento do backend em Java com Spring Boot e JDBC para desempenho e escalabilidade.                 |
+| **Serviço de Busca de Produtos**   | Integração com APIs para buscar e exibir produtos em tempo real, incluindo avaliações e opções de parcelamento. |
+| **Sistema de Cupons de Desconto**  | Aplicação de cupons de desconto no carrinho com feedback visual.                                             |
+| **Paginação Eficiente**            | Paginação para exibir grandes listas de produtos de forma organizada e fluida.                              |
+| **Criação de Contas**              | Permite criar e gerenciar contas de usuários, incluindo informações pessoais e preferências.                  |
+| **Ícones Dinâmicos**               | Ícones atualizados em tempo real mostrando a quantidade de produtos no carrinho.                            |
+
+
 ## 📚 Stack Tecnológica
 
 <img src="./github/menina.gif" min-width="100px" max-width="100px" width="300px" align="right" alt="Computador iuriCode">
