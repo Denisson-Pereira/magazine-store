@@ -8,10 +8,27 @@
   <a href="https://github.com/Denisson-Pereira/magazine-store/stargazers"><img src="https://img.shields.io/github/stars/Denisson-Pereira/magazine-store" alt="Stars"></a>
 </p>
 
+# 📝 Sumário
 
-
-
-
+1. [Sobre o Projeto](#-sobre-o-projeto)
+2. [Principais Características do Software](#-principais-características-do-software)
+3. [Stack Tecnológica](#-stack-tecnológica)
+   - [Design](#-design)
+   - [Backend](#-backend)
+   - [Mobile](#-mobile)
+4. [Pré-requisitos](#-pré-requisitos)
+5. [Como Executar o Projeto](#-como-executar-o-projeto)
+   - [Clonar Repositório Git](#-clonar-repositório-git)
+   - [Backend](#-backend)
+   - [Mobile](#-mobile)
+6. [Visuals and Screenshots](#-visuals-and-screenshots)
+   - [Responsividade e Mobile](#-responsividade-e-mobile)
+   - [Software em Ação](#-software-em-ação)
+   - [Estrutura do Banco de Dados](#-estrutura-do-banco-de-dados)
+   - [Editor de Código](#-editor-de-código)
+7. [Aguarde! Ainda Não Terminou!](#-aguarde-ainda-não-terminou)
+8. [Licença](#-licença)
+9. [Autor](#-autor)
 
 # 📑 Sobre o projeto 
 
@@ -137,6 +154,58 @@ Dê uma espiada no nosso projeto em funcionamento e esclareça todas as suas dú
 ## 💻 Software em Ação
 
 ![Mob 1](./github/software.gif) 
+
+## 💾 Estrutura do Banco de Dados
+
+O banco de dados `magazine_store` contém duas tabelas principais: `marcas` e `produtos`.
+
+### Tabela: `marcas`
+
+| Campo       | Tipo         | Descrição                          |
+|-------------|--------------|------------------------------------|
+| `id`        | int          | Identificador único da marca        |
+| `nome`      | varchar(255) | Nome da marca                       |
+| `avaliacao` | varchar(20)  | Avaliação da marca                  |
+| `imagem`    | varchar(255) | URL da imagem da marca              |
+| `quantidade`| varchar(20)  | Quantidade de produtos da marca     |
+
+**Exemplo de Dados**:
+
+| id | nome    | avaliacao | imagem | quantidade |
+|----|---------|-----------|--------|------------|
+| 1  | Apple   | 4,8       | [Link](https://...) | 1          |
+| 2  | Samsung | 4,5       | [Link](https://...) | 1          |
+
+### Tabela: `produtos`
+
+| Campo          | Tipo         | Descrição                          |
+|----------------|--------------|------------------------------------|
+| `id`           | int          | Identificador único do produto      |
+| `nome`         | varchar(100) | Nome do produto                    |
+| `valor`        | varchar(100) | Preço do produto                   |
+| `quantidade`   | varchar(100) | Quantidade disponível              |
+| `marca`        | varchar(100) | Marca do produto                   |
+| `sistema`      | varchar(100) | Sistema operacional                |
+| `armazenamento`| varchar(100) | Armazenamento interno               |
+| `tela`         | varchar(100) | Tamanho da tela                    |
+| `modelo`       | varchar(100) | Modelo do produto                  |
+| `sobre`        | varchar(255) | Descrição do produto               |
+| `avaliacao`    | varchar(10)  | Avaliação do produto               |
+| `imagem1`      | varchar(255) | URL da imagem principal            |
+| `imagem2`      | varchar(255) | URL da segunda imagem              |
+| `imagem3`      | varchar(255) | URL da terceira imagem             |
+| `ram`          | varchar(255) | Memória RAM                        |
+| `loja1`        | varchar(255) | URL da loja 1                      |
+| `loja2`        | varchar(255) | URL da loja 2                      |
+| `loja3`        | varchar(255) | URL da loja 3                      |
+| `categoria`    | varchar(50)  | Categoria do produto               |
+
+**Exemplo de Dados**:
+
+| id | nome                       | valor | quantidade | marca    | sistema | armazenamento | tela      | modelo        | sobre          | avaliacao | imagem1 | imagem2 | imagem3 | ram  | loja1 | loja2 | loja3 | categoria |
+|----|----------------------------|-------|------------|----------|---------|---------------|-----------|---------------|----------------|-----------|---------|---------|---------|------|-------|-------|-------|-----------|
+| 1  | Apple iPhone 15 (256 GB)   | 8.099 | 100        | Apple    | iOS 16  | 256 GB        | 6,1 Polegadas | iPhone 15     | Super Retina XDR display... | 4,8       | [Link](https://...) | [Link](https://...) | [Link](https://...) | 12 GB | [Link](https://...) | [Link](https://...) | [Link](https://...) | celular   |
+| 2  | Samsung Galaxy S23 FE 5G 128 GB | 2.799 | 50       | Samsung  | Android 13.0 | 128 GB | 6,4 Polegadas | Galaxy S23 FE 5G | 5G 128 GB Câmera Tripla... | 4,5       | [Link](https://...) | [Link](https://...) | [Link](https://...) | 8 GB | [Link](https://...) | [Link](https://...) | [Link](https://...) | celular   |
 
 
 
