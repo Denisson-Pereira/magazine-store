@@ -110,6 +110,9 @@ Dê uma espiada no nosso projeto em funcionamento e esclareça todas as suas dú
 <div style="display: flex; gap: 10px;">
     <img src="./github/img1.png" alt="Mob 2" style="width: 20%;">
     <img src="./github/img2.png" alt="Mob 1" style="width: 20%;">
+    <img src="./github/img3.png" alt="Mob 1" style="width: 20%;">
+    <img src="./github/img4.png" alt="Mob 1" style="width: 20%;">
+    <img src="./github/img5.png" alt="Mob 1" style="width: 20%;">
 </div>
 
 ## 🎥 Tutorial em Vídeo
