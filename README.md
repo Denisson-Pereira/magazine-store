@@ -73,6 +73,7 @@ O **frontend**, construído com **React Native**, proporciona uma interface amig
 [![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)](https://spring.io/)
 ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
 [![Auth0](https://img.shields.io/badge/Auth0-%2300C7B7.svg?style=for-the-badge&logo=auth0&logoColor=white)](https://auth0.com/)
+[![JWT](https://img.shields.io/badge/JWT-%23000000.svg?style=for-the-badge&logo=JSON%20web%20tokens&logoColor=white)](https://jwt.io/)
 
 ### • Mobile
 
