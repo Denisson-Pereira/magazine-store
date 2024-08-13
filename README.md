@@ -63,6 +63,8 @@ O **frontend**, construído com **React Native**, proporciona uma interface amig
 
 ![Adobe Photoshop](https://img.shields.io/badge/adobe%20photoshop-%23051D34?style=for-the-badge&logo=adobe%20photoshop&logoColor=%233CA3F7)
 ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
+[![Canvas](https://img.shields.io/badge/Canvas-%2300599C.svg?style=for-the-badge&logo=canvas&logoColor=white)](https://canvas.instructure.com/)
+
 
 ### • Backend
 
@@ -70,7 +72,7 @@ O **frontend**, construído com **React Native**, proporciona uma interface amig
 ![Maven](https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apache-maven&logoColor=white)
 [![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)](https://spring.io/)
 ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
-
+[![Auth0](https://img.shields.io/badge/Auth0-%2300C7B7.svg?style=for-the-badge&logo=auth0&logoColor=white)](https://auth0.com/)
 
 ### • Mobile
 
